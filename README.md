@@ -6,15 +6,15 @@ This is a template python repository that allows for installation with pyproject
 
 Use Makefile to set up virtual environment:
 
-```
+`
 make virtualenv
-```
+`
 
 Then, install the virtual environment with the printed command. Then install the project in development mode:
 
-```
+`
 make install
-```
+`
 
 ## Using
 
