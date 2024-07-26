@@ -15,13 +15,3 @@ for file in "${files[@]}"; do
 done
 
 mv src/python_template src/$project
-if [[ "$project" != "python_template" ]]; then
-    # remove make setup
-    lines_to_remove=3
-    total_lines=$(wc -l < Makefile)
-    lines_to_keep=$((total_lines - 3))
-    head -n "$lines_to_keep" Makefile > Makefile
-
-    # remove setup.sh
-    rm setup.sh
-fi
