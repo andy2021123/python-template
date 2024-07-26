@@ -18,7 +18,11 @@ virtualenv:
 	@echo $(ACTIVATE)
 
 install:
-	@pip install -e .
+	@pip install -e .[dev]
 	@$(NEWLINE)
 	@echo if facing any errors, make sure to upgrade pip using:
 	@echo python -m pip install --upgrade pip
+
+setup:
+	chmod +x setup.sh
+	./setup.sh

@@ -17,5 +17,10 @@ classifiers = [
   "Operating System :: OS Independent",
 ]
 
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
 [project.scripts]
 python-template = "python_template.cli:main"

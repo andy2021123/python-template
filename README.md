@@ -1,4 +1,4 @@
-# Python Template
+# python-template
 
 This is a template python repository that allows for installation with pyproject.toml, has a cli script set up, and has some Makefile commands for easy project initialization.
 
