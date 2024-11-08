@@ -41,7 +41,7 @@ dev = [
 ]
 
 [project.scripts]
-$project = "$project.cli:main"
+$project = "$(echo $project | sed 's/-/_/g').cli:main"
 EOF
 
 mv src/python-template src/$project
